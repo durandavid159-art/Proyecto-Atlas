@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url(../Assets/images/banner-bk.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 75vh;
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 31rem;
+}
+
+.encabezado{
+    width: 43%;
+    margin-top: 4%;
+    margin-left: 10%;
+    font-size: 1.5rem;
+}
+
+.encabezado button{
+    background-color: aquamarine;
+    padding: 1%;
+    border-radius: 12px;
+    font-size: 1rem;
+    margin-top: 7%;
+}
+
+.seccionUno{
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
+}
+
+.seccionUno img{
+    width: 50%;
+    display: block;
+}
+
+.fichas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 26%;
+    height: 31vh;
+}
+
+.fichas p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.seccionDos{
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
+}
+
+.contenedor{
+    max-width: 44%;
+}
+.seccionDos img{
+    display: block;
+    max-height: 31vh;
+}
+
+.seccionTres{
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
+}
+
+.fichasDos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 37vh;
+}
+
+.uno{
+    width:20%;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: space-around;
+}
