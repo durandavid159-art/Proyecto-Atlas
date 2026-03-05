@@ -14,12 +14,13 @@
     margin-bottom: 2%;
 }
 
+/*seccion header*/
 header{
     background-image: url(../Assets/images/banner-bk.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     color: white;
-    height: 75vh;
+    min-height: 100vh;
 }
 
 nav{
@@ -28,10 +29,13 @@ nav{
     align-items: center;
     gap: 31rem;
 }
+nav img{
+    width: 8%;
+}
 
 .encabezado{
     width: 43%;
-    margin-top: 4%;
+    margin-top: 7%;
     margin-left: 10%;
     font-size: 1.5rem;
 }
@@ -56,6 +60,7 @@ nav{
     font-weight: 700;
 }
 
+/*seccion uno*/
 .seccionUno{
     display: flex;
     flex-direction: column;
@@ -67,11 +72,11 @@ nav{
 .fichasUno{
     display: flex;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 50vh;
 }
 
 .fichasUno img{
-    width: 50%;
+    width: 38%;
     display: block;
 }
 
@@ -85,14 +90,25 @@ nav{
 }
 
 .fichas p{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     text-align: center;
 }
 
+/*seccion main*/
 main{
-    background: linear-gradient(-10deg, #19d3a2 66%, #ffffff 0%);
+    background: linear-gradient(-10deg, #19d3a2 64%, #ffffff 0%);
 }
 
+main p{
+    font-size: 0.8rem;
+}
+
+main img{
+    width: 22%;
+    height: 29vh;
+}
+
+/*seccion dos*/
 .seccionDos{
     display: flex;
     justify-content: center;
@@ -105,7 +121,7 @@ main{
 
 .contenedor p{
     max-width: 75%;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
 }
 
 .contenedor button{
@@ -122,14 +138,20 @@ main{
     max-height: 31vh;
 }
 
+/*seccion tres*/
 .seccionTres{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     min-height: 40vh;
+    gap: 50px;
 }
 .seccionTres p{
     max-width: 75%;
     margin-bottom: 4%;
+}
+
+.contenedorTres{
+    width: 41%;
 }
 
 .seccionTres button{
@@ -141,6 +163,15 @@ main{
     color: white;
 }
 
+/*seccion cuatro*/
+.seccionCuatro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
 .fichasDos{
     display: flex;
     justify-content: center;
@@ -149,28 +180,30 @@ main{
 }
 
 .uno{
-    width: 21%;
+    max-width: 21%;
+    min-height: 63vh;
     text-align: center;
-    margin-top: 3%;
-}
-
-.uno h3{
-    margin-top: 16%;
-    margin-bottom: 8%;
-}
-
-.uno button{
-    background-color: #052738;
-    padding: 1.5%;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: white;
-    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .uno p{
-    margin: 10% 25%;
+    min-height: 12vh;
+    max-width: 65%;
+}
+
+
+.uno button{
+    background: transparent;
+    padding: 11px 21px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #00093d;
+    border: 1px solid #080845;
 }
 
 .pesos{
@@ -178,15 +211,129 @@ main{
     font-weight: 700;
 }
 
-.imagenes{
-    display: flex;
-    justify-content: space-around;
+.premium{
+    background: #1e2a47;
+    color: white;
 }
 
-.seccionCuatro{
+.premium p{
+    color: white;
+}
+
+.premium button{
+    background: #00d084;
+    border: none;
+    color: white;
+}
+
+/*Seccion imagenes*/
+.imagenes{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0rem;
+    background-color: #e3e8eb;
+    gap: 5rem;
+}
+
+/*seccion cinco*/
+.seccionCinco{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 79vh;
+    align-items: center;
+    background-image:url(../Assets/images/contact-bk.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.contenedorCinco{
+    width: 30%;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.contenedorCinco p{
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.subtituloContendorCinco{
+    color: white;
+    font-size: 2.9rem;
+    margin-bottom: 4%;
+}
+
+/*formulario*/
+.datos{
+    display: flex;
+    gap: 20px;
+}
+
+.input-groupo{
     display: flex;
     flex-direction: column;
+}
+
+label{
+    color: #00e6a8;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea{
+    background: transparent;
+    border: 2px solid #00e6a8;
+    padding: 12px;
+    border-radius: 6px;
+    color: white;
+}
+
+button{
+    margin-top: 10px;
+    padding: 2% 44%;
+    border: none;
+    border-radius: 30px;
+    background: #00e6a8;
+    color: #003333;
+    font-weight: bold;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    height: 20vh;
+    background-color: #121238;
+    gap: 9rem;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 4%;
-    margin-bottom: 4%;
+}
+
+footer .redes{
+    display: flex;
+    gap: 1rem;
+}
+
+footer .textoFooter{
+    color: white;
+    font-size: 0.8rem;
+}
+
+/*medias Queris*/
+@media (max-width:1279){
+    .imagenes {
+        gap: 3rem;
+}
+}
+
+@media (max-width:920){
+
+}
+
+@media (max-width:768){
+
+}
+
+@media (max-width:480){
+
 }
