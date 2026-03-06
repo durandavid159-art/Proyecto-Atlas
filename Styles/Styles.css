@@ -20,7 +20,7 @@ header{
     background-size:cover;
     background-repeat: no-repeat;
     color: white;
-    min-height: 100vh;
+    min-height: 66vh;
 }
 
 nav{
@@ -30,7 +30,11 @@ nav{
     gap: 31rem;
 }
 nav img{
-    width: 8%;
+    width: 7%;
+}
+
+nav p{
+    font-size: 1rem;
 }
 
 .encabezado{
@@ -72,7 +76,7 @@ nav img{
 .fichasUno{
     display: flex;
     justify-content: center;
-    min-height: 50vh;
+    min-height: 38vh;
 }
 
 .fichasUno img{
@@ -96,7 +100,7 @@ nav img{
 
 /*seccion main*/
 main{
-    background: linear-gradient(-10deg, #19d3a2 64%, #ffffff 0%);
+    background: linear-gradient(-10deg, #19d3a2 56%, #ffffff 0%);
 }
 
 main p{
@@ -104,15 +108,16 @@ main p{
 }
 
 main img{
-    width: 22%;
-    height: 29vh;
+    display: block;
+    max-width: 20%;
+    max-height: 19vh;
 }
 
 /*seccion dos*/
 .seccionDos{
     display: flex;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 24vh;
 }
 
 .contenedor{
@@ -133,17 +138,12 @@ main img{
     color: white;
 }
 
-.seccionDos img{
-    display: block;
-    max-height: 31vh;
-}
-
 /*seccion tres*/
 .seccionTres{
     display: flex;
     justify-content: flex-end;
-    min-height: 40vh;
-    gap: 50px;
+    min-height: 23vh;
+    gap: 38px;
 }
 .seccionTres p{
     max-width: 75%;
@@ -181,7 +181,7 @@ main img{
 
 .uno{
     max-width: 21%;
-    min-height: 63vh;
+    min-height: 54vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -302,7 +302,7 @@ button{
 /*footer*/
 footer{
     display: flex;
-    height: 20vh;
+    height: 10vh;
     background-color: #121238;
     gap: 9rem;
     justify-content: space-around;
@@ -320,20 +320,314 @@ footer .textoFooter{
 }
 
 /*medias Queris*/
-@media (max-width:1279){
+@media (max-width: 999px){
+    main img { 
+        max-height: 16vh;
+    }
+
+    .fichasUno {
+        min-height: 50vh;
+    }
+
+    .fichasDos {
+    min-height: 44vh;
+    }
+
+    .uno {
+        max-width: 30%;
+        min-height: 44vh;
+    }
+
     .imagenes {
-        gap: 3rem;
-}
-}
-
-@media (max-width:920){
-
+        gap: 2rem;
+    }
 }
 
-@media (max-width:768){
+@media (max-width:813px){
+    header {
+        min-height: 51vh;
+    }
+
+    .seccionUno {
+        margin-bottom: 0%;
+    }
+
+    .encabezado {
+        width: 55%;
+    }
+
+    .encabezado h1 {
+        font-size: 2rem;
+    }
+    .fichas {
+        width: 21%;
+        height: 24vh;
+    }
+
+    .fichasUno {
+        gap: 15px;
+    }
+
+    .contenedor {
+        max-width: 50%;
+    }
+
+    main img {
+        max-height: 13vh;
+    }
+
+    main {
+        background: linear-gradient(-10deg, #19d3a2 61%, #ffffff 0%);
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    .imagenes {
+        padding: 2rem 0rem;
+        gap: 1rem;
+    }
+
+    .subtituloContendorCinco {
+        font-size: 1.5rem;
+    }
+
+    .contenedorCinco p {
+        line-height: 1.8;
+        font-size: 0.7rem;
+    }
+
+    .seccionCinco {
+        min-height: 44vh;
+    }
+    
+}
+
+@media (max-width:743px){
+    header {
+        min-height: 40vh;
+    }
+    
+    nav {
+        gap: 7rem;
+        justify-content: space-around;
+    }
+
+    .encabezado h1 {
+        font-size: 1.2rem;
+    }
+
+    .encabezado p {
+        font-size: 0.8rem;
+    }
+
+    .subtitulos {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .fichas p {
+        font-size: 0.7rem;
+    }
+
+    .subtitulos {
+        font-size: 1.2rem;
+    }
+
+    .contenedor {
+        max-width: 58%;
+    }
+
+    .contenedor p {
+        max-width: 97%;
+        margin-bottom: 3%;
+    }
+
+    main img {
+        
+        margin-top: 4%;
+    }
+
+    main img {
+        margin-top: 4%;
+    }
+
+    .seccionTres p {
+        max-width: 95%;
+    }
+
+    .pesos {
+        font-size: 2rem;
+    }
+
+    .uno p {
+        font-size: 0.8rem;
+        min-height: 7vh;
+    }
+
+    .uno button {
+        padding: 8px 17px;
+    }
+
+    .imagenes img{
+        width: 16%;
+    }
+
+    .subtituloContendorCinco {
+        font-size: 1.3rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    input, textarea {
+        padding: 2px;
+    }
+
+    button {
+        padding: 2% 39%;
+    }
+
+    .seccionCinco {
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedorCinco {
+        width: 73%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .formulario{
+        margin-bottom: 3%;
+    }
+
+    footer {
+        gap: 2rem;
+    }
 
 }
 
-@media (max-width:480){
+@media (max-width:480px){
+    nav p {
+        font-size: 0.6rem;
+    }
 
+    .encabezado h1 {
+        font-size: 1rem;
+    }
+
+    .encabezado button {
+        font-size: 0.6rem;
+        margin-top: 3%;
+    }
+
+    .encabezado p {
+        font-size: 0.6rem;
+    }
+
+    .encabezado {
+        width: 70%;
+    }
+
+    .subtitulos {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.7rem;
+    }
+
+    .fichas p {
+        font-size: 0.6rem;
+    }
+
+    .fichasUno {
+        min-height: 40vh;
+    }
+
+    .fichasUno img {
+        width: 70%;
+    }
+
+    .contenedor p{
+        font-size: 0.6rem; 
+    }
+
+    main img {
+        max-height: 10vh;
+    }
+
+    main img {
+        margin-top: 11%;
+    }
+
+    .contenedorTres {
+        width: 50%;
+    }
+
+    .contenedorTres p {
+        font-size: 0.6rem;
+    }
+
+    .contenedor button {
+        padding: 2.5%;
+        font-size: 0.5rem;
+    }
+
+    .contenedorTres button{
+        padding: 2.5%;
+        font-size: 0.5rem;
+    }
+
+    .pesos {
+        font-size: 1.5rem;
+    }
+
+    .uno p {
+        font-size: 0.6rem;
+    }
+
+    .uno button {
+        font-size: 0.6rem;
+    }
+
+    .uno button {
+        padding: 2px 4px;
+    }
+
+    .imagenes {
+        padding: 1rem 0rem;
+    }
+
+    .subtituloContendorCinco {
+        font-size: 1rem;
+    }
+
+    .contenedorCinco p {
+        font-size: 0.6rem;
+    }
+
+    .datos {
+        gap: 5px;
+    }
+
+    button {
+        padding: 1% 42%;
+    }
+
+    footer {
+        gap: 0.6rem;
+    }
+
+    .textoFooter p{
+        font-size: 0.6rem;
+    }
 }
